@@ -20,13 +20,11 @@ O banco foi modelado utilizando conceitos de **Minimundo, DER, entidades, atribu
 ```
 /petcare-database
 │
-├── 01_create_database.sql
-├── 02_create_tables.sql
-├── 03_inserts.sql
-├── 04_selects.sql
-├── 05_updates.sql
-├── 06_deletes.sql
-└── README.md
+├── README.md
+├── create_database_and_tables.sql
+├── inserts.sql
+├── selects.sql
+├── updates_and_deletes.sql
 ```
 
 ---
@@ -52,7 +50,7 @@ Para executar os scripts, você precisa de:
 Execute o arquivo:
 
 ```
-01_create_database.sql
+create_database_and_tables.sql
 ```
 
 Este script irá:
@@ -76,7 +74,7 @@ Incluindo **PK**, **FK** e restrições.
 Para inserir dados reais de teste:
 
 ```
-03_inserts.sql
+inserts.sql
 ```
 
 Esse arquivo contém ao menos **5 inserts por tabela**, com dados coerentes entre si.
@@ -88,7 +86,7 @@ Esse arquivo contém ao menos **5 inserts por tabela**, com dados coerentes entr
 Para testar relacionamentos e manipular os dados:
 
 ```
-04_selects.sql
+selects.sql
 ```
 
 Esse arquivo contém:
@@ -106,7 +104,7 @@ Esse arquivo contém:
 Se quiser testar comandos de alteração e deleção:
 
 ```
-05_updates.sql
+updates_and_deletes.sql
 ```
 
 Esse script inclui **3 comandos UPDATE** com condições variadas e **3 comandos DELETE**, todos com WHERE para evitar exclusões acidentais.
